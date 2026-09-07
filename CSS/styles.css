@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #252525;
+    color: #333;
+    padding: 10px;
+}
+
+main {
+    min-height: 98.5vh;
+    background: #4e4e4e00;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.order-creation, .order-completion {
+    background-color: #3e3e3e;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.order-creation label, .order-completion label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.order-creation input, .order-completion input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#complete-order-button, #submit-button {
+    border-radius: 0 0 5px 5px;
+    background-color: #ff1a44;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.inc-ord-sect {
+    text-align: center;
+    background-color: #ff1a44;
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.inc-ord-sect h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.comp-ord-sect {
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.comp-ord-sect h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 33%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff2a;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+tbody tr {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    max-width: 33%;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    .order-creation, .order-completion, .inc-ord-sect, .comp-ord-sect {
+        padding: 20px;
+    }
+
+    .order-creation input, .order-completion input {
+        width: 100%;
+    }
+}
